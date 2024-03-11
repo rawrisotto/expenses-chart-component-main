@@ -1,0 +1,164 @@
+/* CSS RESET */
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-softRed: hsl(10, 79%, 65%);
+  --clr-cyan: hsl(186, 34%, 60%);
+  --clr-darkBrown: hsl(25, 47%, 15%);
+  --clr-mediumBrown: hsl(28, 10%, 53%);
+  --clr-cream: hsl(27, 66%, 92%);
+  --clr-veryPaleOrange: hsl(33, 100%, 98%);
+
+  --ff-base: "DM Sans", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* General Styling */
+body {
+  font-family: var(--ff-base);
+  background: var(--clr-cream);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-700);
+}
+
+h3 {
+  font-size: 0.925rem;
+}
+
+.expenses-chart {
+  margin: 1rem;
+  width: 345px;
+}
+
+/* Balance Section Styling */
+.balance-section {
+  background: var(--clr-softRed);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h3.balance {
+  color: var(--clr-veryPaleOrange);
+}
+
+h3.spending {
+  color: var(--clr-mediumBrown);
+}
+
+.balance-p {
+  color: var(--clr-veryPaleOrange);
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+}
+
+/* Spending Section Styling */
+.spending-section {
+  background: var(--clr-veryPaleOrange);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+/* Chart Styling */
+.chart-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.chart {
+  color: var(--clr-mediumBrown);
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+.results {
+  padding: 1.5rem 0 0 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--clr-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.total-p {
+  color: var(--clr-darkBrown);
+  font-size: 1.875rem;
+  font-weight: var(--fw-700);
+}
+
+.difference-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.difference-p {
+  font-weight: var(--fw-700);
+}

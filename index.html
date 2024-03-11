@@ -9,52 +9,58 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <!-- Balance Section -->
-      <section class="balance-section">
-        <!-- Balance Wrapper -->
-        <div class="balance-wrapper">
-          <h3 class="title-h3">My balance</h3>
-          <p class="balance-p">$921.48</p>
-        </div>
-
-        <!-- Logo -->
-        <img src="./images/logo.svg" alt="Logo" />
-      </section>
-
-      <!-- Spending Section -->
-      <section class="spending-section">
-        <h2 class="title-h2">Spending - Last 7 days</h2>
-
-        <!-- Chart -->
-        <div class="char-wrapper">
-          <p class="chart" id="monday">mon</p>
-          <p class="chart" id="tuesday">tue</p>
-          <p class="chart" id="wednesday">wed</p>
-          <p class="chart" id="thursday">thu</p>
-          <p class="chart" id="friday">fri</p>
-          <p class="chart" id="saturday">sat</p>
-          <p class="chart" id="sunday">sun</p>
-        </div>
-
-        <!-- Total -->
-        <div class="results">
-          <div class="total-wrapper">
-            <h3 class="title-h3">Total this month</h3>
-            <p class="total-p">$478.33</p>
+      <article class="expenses-chart">
+        <!-- Balance Section -->
+        <section class="balance-section">
+          <!-- Balance Wrapper -->
+          <div class="balance-wrapper">
+            <h3 class="balance">My balance</h3>
+            <p class="balance-p">$921.48</p>
           </div>
-          <div class="difference-wrapper">
-            <p class="difference-p">+2.4%</p>
-            <h3 class="title-h3">from last month</h3>
+
+          <!-- Logo -->
+          <img src="./images/logo.svg" alt="Logo" />
+        </section>
+
+        <!-- Spending Section -->
+        <section class="spending-section">
+          <h2>Spending - Last 7 days</h2>
+
+          <!-- Chart -->
+          <div class="chart-wrapper">
+            <p class="chart" id="monday">mon</p>
+            <p class="chart" id="tuesday">tue</p>
+            <p class="chart" id="wednesday">wed</p>
+            <p class="chart" id="thursday">thu</p>
+            <p class="chart" id="friday">fri</p>
+            <p class="chart" id="saturday">sat</p>
+            <p class="chart" id="sunday">sun</p>
           </div>
-        </div>
-      </section>
+
+          <!-- Total -->
+          <div class="results">
+            <div class="total-wrapper">
+              <h3 class="spending">Total this month</h3>
+              <p class="total-p">$478.33</p>
+            </div>
+            <div class="difference-wrapper">
+              <p class="difference-p">+2.4%</p>
+              <h3 class="spending">from last month</h3>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
-
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
   </body>
 </html>
