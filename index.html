@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Balance Section -->
+      <section class="balance-section">
+        <!-- Balance Wrapper -->
+        <div class="balance-wrapper">
+          <h3 class="title-h3">My balance</h3>
+          <p class="balance-p">$921.48</p>
+        </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+        <!-- Logo -->
+        <img src="./images/logo.svg" alt="Logo" />
+      </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <!-- Spending Section -->
+      <section class="spending-section">
+        <h2 class="title-h2">Spending - Last 7 days</h2>
 
-  My balance
-  $921.48
+        <!-- Chart -->
+        <div class="char-wrapper">
+          <p class="chart" id="monday">mon</p>
+          <p class="chart" id="tuesday">tue</p>
+          <p class="chart" id="wednesday">wed</p>
+          <p class="chart" id="thursday">thu</p>
+          <p class="chart" id="friday">fri</p>
+          <p class="chart" id="saturday">sat</p>
+          <p class="chart" id="sunday">sun</p>
+        </div>
 
-  Spending - Last 7 days
+        <!-- Total -->
+        <div class="results">
+          <div class="total-wrapper">
+            <h3 class="title-h3">Total this month</h3>
+            <p class="total-p">$478.33</p>
+          </div>
+          <div class="difference-wrapper">
+            <p class="difference-p">+2.4%</p>
+            <h3 class="title-h3">from last month</h3>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
+    this month $478.33 +2.4% from last month
+  </body>
 </html>
