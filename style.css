@@ -134,9 +134,10 @@ h3.spending {
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
-  height: 209px;
+  /* height: 209px; */
+  height: 180px;
   align-items: end;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .chart-hover {
