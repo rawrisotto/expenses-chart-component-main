@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+  .expenses-chart {
+    width: 540px;
+  }
+
+  .balance-section {
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3.balance {
+    font-size: 1.125rem;
+  }
+
+  .balance-p {
+    font-size: 2rem;
+  }
+
+  .spending-section {
+    padding: 1.75rem 2.25rem;
+    border-radius: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .chart-wrapper {
+    margin-top: 2.75rem;
+  }
+
+  .chart-hover {
+    font-size: 1.125rem;
+  }
+
+  .chart {
+    padding: 0 1.5rem;
+  }
+
+  .chart-description {
+    font-size: 1rem;
+  }
+
+  .results {
+    margin-top: 1.5rem;
+    padding: 1.75rem 0 0 0;
+  }
+
+  h3.spending {
+    font-size: 1.125rem;
+  }
+
+  .total-p {
+    font-size: 3.125rem;
+  }
+
+  .difference-p {
+    font-size: 1.125rem;
+  }
+}
