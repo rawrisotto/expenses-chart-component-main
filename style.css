@@ -70,6 +70,10 @@ h6 {
   --fw-700: 700;
 }
 
+@keyframes draw{
+  0%{height:0;} 
+}
+
 /* General Styling */
 body {
   font-family: var(--ff-base);
@@ -130,12 +134,36 @@ h3.spending {
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
+  height: 209px;
+  align-items: end;
+  margin-top: 1rem;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+  height: 100%;
 }
 
 .chart {
-  color: var(--clr-mediumBrown);
+  height: 100%;
+  padding: 5px 1em 0;
+  background: var(--clr-softRed);
+  border-radius: 0.125rem;
+  cursor: pointer;
+  animation: draw 1s ease-in-out;
+}
+
+.chart:hover {
+  background: var(--clr-cyan);
+}
+
+.chart-description {
   font-size: 0.75rem;
-  margin-top: 2rem;
+  color: var(--clr-mediumBrown);
 }
 
 .results {
