@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rawrisotto/expenses-chart-component-main)
-- Live Site URL: [Netlify](https://65f4224d14582f470d6d1773--tiny-meringue-143c10.netlify.app/)
+- Live Site URL: [Netlify](https://tiny-meringue-143c10.netlify.app/)
 
 ## My process
 
